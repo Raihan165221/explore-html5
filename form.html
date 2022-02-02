@@ -5,18 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-     <h1>Sit Er Pitha</h1>
-   </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="semantic.html">Semantic</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
    <main>
        <form action="">
            <p>Name: <input type="text" placeholder="Enter Your Name"></p>
            <p>Email: <input type="email" placeholder="Enter Your Email"></p>
            <fieldset>
                <legend>Select Your Pitha</legend>
+               <p><label for="chitoy"><input type="radio" name="pitha" id="chitoy">Chitoy</label></p>
+               <p><label for="vapa"><input type="radio" name="pitha" id="vapa">Vapa</label></p>
+               <p><label for="tel"><input type="radio" name="pitha" id="tel">Tel er Pitha</label></p>
            </fieldset>
+           <fieldset>
+               <legend>Select Your Vorta</legend>
+               <p><label for="sutki"><input type="checkbox" name="vorta" id="sutki">Sutki</label></p>
+               <p><label for="sorisha"><input type="checkbox" name="vorta" id="sorisha">Sorisha</label></p>
+               <p><label for="rosun"><input type="checkbox" name="vorta" id="rosun">Rosun</label></p>
+               <p><label for="kali-jira"><input type="checkbox" name="vorta" id="kali-jira">Kali-jira</label></p>
+           </fieldset>
+           <h3>Address:</h3>
+           <textarea name="" id="" cols="80" rows="5"></textarea><br>
+           <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
        </form>
    </main>
 </body>
